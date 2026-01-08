@@ -4,9 +4,9 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-var leftX = 45;
-var rightX = 370;
-var sunRadius = 100;
+var leftX = 55;
+var rightX = 350;
+var sunRadius = 170;
 
 
 //🟢Draw Function - Runs on Repeat
@@ -19,7 +19,7 @@ draw = function(){
   // sun
   fill(255, 170, 0);
   ellipse(200, 100, sunRadius, sunRadius);
-
+ 
   // clouds 
   fill(255, 255, 255);
 
@@ -32,10 +32,12 @@ draw = function(){
   ellipse(rightX, 100, 126, 97);
   ellipse(rightX+62, 100, 70, 60);
   ellipse(rightX-62, 100, 70, 60);
-  
+   leftX=leftX+2
+   rightX=rightX-2
+
 }
 
-
+ 
 //🟡Extra FUN Features Ms. Hall Added
 //Proceed with Caution (and Curiosity!)
 
